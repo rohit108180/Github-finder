@@ -22,7 +22,7 @@ if(process.env.NODE_ENV !== 'production'){
 }
 else{
   githubClientId = process.env.GITHUB_CLIENT_ID;
-  githubClientSecret = process.env. GITHUB_CLIENT_SECRET; 
+  githubClientSecret = process.env.GITHUB_CLIENT_SECRET; 
 
 }
 
@@ -99,7 +99,7 @@ const GithubState = (props) => {
   
 
   //Set loading
-  const setLoading = () => dispatch({type: SET_LOADING  ,searchUsers})
+  const setLoading = () => dispatch({type: SET_LOADING })
 
   return (
     <githubContext.Provider
